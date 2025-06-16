@@ -1,0 +1,38 @@
+/* ...existing code... */
+.secondary-btn {
+  background: transparent;
+  color: #ffb347;
+  border: 2px solid #ffb347;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.secondary-btn:hover {
+  background: #ffb347;
+  color: #222;
+}
+
+.info-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #0002;
+  color: #fff;
+  text-align: center;
+}
+
+.info-section h2 {
+  color: #ffb347;
+  margin-bottom: 1rem;
+}
+/* ...existing code... */

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Exo 2", sans-serif;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      header {
+        padding: 1rem 5%;
+        background-color: #111;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .hero {
+        height: 80vh;
+        background: url("img3.jpg") center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero .content {
+        text-align: center;
+        color: white;
+      }
+
+      .hero .title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero .sub-title p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .hero .buttons {
+        margin-top: 1rem;
+      }
+
+      .hero button {
+        padding: 0.8rem 1.5rem;
+        margin: 0 0.5rem;
+        font-size: 1rem;
+        background-color: #f15412;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      
+      .gallery,
+      .pricing,
+      .bmi,
+      .contact {
+        padding: 4rem 5%;
+      }
+
+  
+      .gallery h1,
+      .pricing h1,
+      .bmi h1
+      {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+     
+
+
+
+
+      /* ...existing code... */
+
+.workout-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #0002;
+  color: #fff;
+  text-align: center;
+}
+
+.workout-section h2 {
+  color: #ffb347;
+  margin-bottom: 2rem;
+}
+
+.workout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.workout-item {
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #0003;
+  text-align: left;
+}
+
+.workout-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0 16px 16px 0;
+  margin-right: 0;
+}
+
+.workout-info {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.workout-info h3 {
+  color: #ffb347;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .workout-list {
+    gap: 1.2rem;
+  }
+  .workout-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .workout-item img {
+    width: 100%;
+    height: 180px;
+    border-radius: 16px 16px 0 0;
+    margin: 0;
+  }
+  .workout-info {
+    padding: 1rem;
+  }
+}
+/* ...existing code... */
+
+      .bootcamps {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .bootcamps div {
+        background-color: #1a1a1a;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 250px;
+        text-align: center;
+      }
+
+      .bootcamps h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #f15412;
+      }
+
+      .gallery .images {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      .gallery .images div img {
+        width: 300px;
+        border-radius: 10px;
+      }
+
+      .pricing .wrapper {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .pricing .card {
+        background-color: #222;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        text-align: center;
+      }
+
+      .pricing .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .pricing .title {
+        padding: 1rem;
+      }
+
+      .pricing .title h1 {
+        font-size: 1.5rem;
+        color: #f15412;
+      }
+
+      .pricing .description {
+        padding: 1rem;
+      }
+
+      .pricing .description p {
+        margin: 0.5rem 0;
+      }
+
+      .pricing .description a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #f15412;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .bmi .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+      .bmi .wrapper {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .bmi form {
+        background-color: #1a1a1a;
+        padding: 2rem;
+        border-radius: 10px;
+      }
+
+      .bmi form div {
+        margin-bottom: 1rem;
+      }
+
+      .bmi form label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .bmi form input {
+        width: 100%;
+        padding: 0.6rem;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .bmi form button {
+        margin-top: 1rem;
+        padding: 0.8rem 1.2rem;
+        background-color: #f15412;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .bmi img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .contact form {
+        background-color: #1a1a1a;
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 10px;
+      }
+
+      .contact form div {
+        margin-bottom: 1rem;
+      }
+
+      .contact form label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .contact form input {
+        width: 100%;
+        padding: 0.6rem;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .contact form button {
+        margin-top: 1rem;
+        padding: 0.8rem 1.5rem;
+        background-color: #f15412;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: #111;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        .bootcamps,
+        .gallery .images,
+        .pricing .wrapper,
+        .bmi .container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .hero-content {
+        text-align: center;
+        color: white;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-content h1 span {
+        color: #f15412;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .cta-btn,
+      .secondary-btn {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        margin: 0 0.5rem;
+        font-size: 1rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .cta-btn {
+        background-color: #f15412;
+      }
+
+      .secondary-btn {
+        background-color: transparent;
+        border: 2px solid #f15412;
+      }
+
+      .info-section {
+        padding: 4rem 5%;
+        text-align: center;
+      }
+
+      .info-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #f15412;
+      }
+
+      .info-section p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+
+
+
+
+      /* Stylish Contact Form */
+/* ...existing code... */
+.contact {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.09);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0003;
+  color: #fff;
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background: #23272f;
+  color: #fff;
+  outline: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  background: #2c313a;
+  box-shadow: 0 0 0 2px #ffb347;
+}
+
+#contact-form textarea {
+  min-height: 110px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+#contact-form button {
+  background: linear-gradient(90deg, #ffb347, #ffcc33);
+  color: #23272f;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 20px #ffb34755;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+#contact-form button:hover {
+  background: #fff;
+  color: #ffb347;
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding: 1rem;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.98rem;
+    padding: 0.7rem;
+  }
+}
+/* ...existing code... */
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>Energy Hub Gym</header>
+
+    <section class="hero">
+      <div class="content">
+        <div class="title">Welcome to FitLife</div>
+        <div class="sub-title">
+          <p>Your fitness journey starts here.</p>
+          <p>Transform Your Body, Mind, and Life!</p>
+        </div>
+        <div class="buttons">
+          <a href="#pricing" class="cta-btn">Get Started</a>
+        <a href="#about" class="secondary-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="info-section">
+      <h2>About Energy Hub Gym</h2>
+      <p>
+        We offer state-of-the-art equipment, expert trainers, and a vibrant
+        community to help you achieve your fitness goals.
+      </p>
+    </section>
+
+    <section id="join" class="info-section">
+      <h2>Join Us</h2>
+      <p>
+        Ready to start your fitness journey? Sign up today and experience the
+        Energy Hub difference!
+      </p>
+    </section>
+
+     <!-- ...existing code... -->
+
+<section id="workouts" class="workout-section">
+  <h2>Workout Sessions</h2>
+  <div class="workout-list">
+    <div class="workout-item">
+      <img src="img1.webp" alt="Cardio Session">
+      <div class="workout-info">
+        <h3>Cardio Blast</h3>
+        <p>High-energy cardio sessions to boost your stamina and burn calories fast.</p>
+      </div>
+    </div>
+    <div class="workout-item">
+      <img src="img2.jpg" alt="Strength Training">
+      <div class="workout-info">
+        <h3>Strength Training</h3>
+        <p>Build muscle and power with our expert-led strength training routines.</p>
+      </div>
+    </div>
+    <div class="workout-item">
+      <img src="img3.jpg" alt="Yoga Flow">
+      <div class="workout-info">
+        <h3>Yoga Flow</h3>
+        <p>Improve flexibility and find your inner peace with our calming yoga classes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ...existing code... -->
+
+    <section class="gallery">
+      <h1>Gallery</h1>
+      <div class="images">
+        <div>
+          <img src="img1.webp" alt="galleryImage" />
+          <img src="img2.jpg" alt="galleryImage" />
+          <img src="img3.jpg" alt="galleryImage" />
+        </div>
+        <div>
+          <img src="img4.jpg" alt="galleryImage" />
+          <img src="img7.jpg" alt="galleryImage" />
+          <img src="img8.jpg" alt="galleryImage" />
+        </div>
+        <div>
+          <img src="img5.jpg" alt="galleryImage" />
+          <img src="img6.jpg" alt="galleryImage" />
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h1>Our Plans</h1>
+      <div class="wrapper">
+        <div class="card">
+          <img src="pricing.jpg" alt="Basic Plan" />
+          <div class="title">
+            <h1>Basic</h1>
+            <h3>₹999 / month</h3>
+          </div>
+          <div class="description">
+            <p>✔ Unlimited Gym Access</p>
+            <p>✔ Group Classes</p>
+            <p>✔ Locker Facility</p>
+            <a href="#">Join Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pricing.jpg" alt="Premium Plan" />
+          <div class="title">
+            <h1>Premium</h1>
+            <h3>₹1499 / month</h3>
+          </div>
+          <div class="description">
+            <p>✔ Everything in Basic</p>
+            <p>✔ Personal Trainer</p>
+            <p>✔ Steam & Sauna</p>
+            <a href="#">Join Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pricing.jpg" alt="Pro Plan" />
+          <div class="title">
+            <h1>Pro</h1>
+            <h3>₹1999 / month</h3>
+          </div>
+          <div class="description">
+            <p>✔ Premium Plan Benefits</p>
+            <p>✔ Nutrition Guidance</p>
+            <p>✔ Priority Booking</p>
+            <a href="#">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bmi">
+      <h1>Calculate Your BMI</h1>
+      <div class="container">
+        <div class="wrapper">
+          <form id="bmiForm">
+            <div>
+              <label for="height">Height (in cm)</label>
+              <input type="number" id="height" required />
+            </div>
+            <div>
+              <label for="weight">Weight (in kg)</label>
+              <input type="number" id="weight" required />
+            </div>
+            <button type="submit">Calculate BMI</button>
+            <div id="bmiResult" style="margin-top: 1rem"></div>
+          </form>
+        </div>
+        <div class="wrapper">
+          <img src="bmi.jpg" alt="BMI Info" />
+        </div>
+      </div>
+    </section>
+
+
+     
+      <!-- ...existing code... -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/xqkrzqzv" method="POST" id="contactForm">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+    
+    <button type="submit" class="send-btn">Send Message</button>
+  </form>
+  <div id="form-success" style="display:none;color:#ffb347;margin-top:1rem;">
+    Thank you! Your message has been sent.
+  </div>
+</section>
+<!-- ...existing code... -->
+
+
+
+
+</form>
+    </section>
+
+    <footer>© 2025 FitLife Gym. All rights reserved.</footer>
+    <footer>
+      
+      <p>Follow us on:</p>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+
+      <br><br><br><br>
+      <p>Devlop By : Prince Patel 
+         <br>contact : +91 9484569699
+      </p>
+    </footer>
+
+
+ 
+
+
+
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  window.onload = function() {
+    emailjs.init("c1iZU7eKx3Q_A-1aB"); // Your actual EmailJS public key
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_4bt4jt5', 'template_7x08z6i', this)
+        .then(function(response) {
+          alert('Email sent successfully!');
+        }, function(error) {
+          alert('Failed to send email: ' + JSON.stringify(error));
+        });
+    });
+  };
+
+
+      document
+        .getElementById("bmiForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const height =
+            parseFloat(document.getElementById("height").value) / 100;
+          const weight = parseFloat(document.getElementById("weight").value);
+          const bmi = weight / (height * height);
+          let category = "";
+          if (bmi < 18.5) category = "Underweight";
+          else if (bmi < 24.9) category = "Normal weight";
+          else if (bmi < 29.9) category = "Overweight";
+          else category = "Obese";
+          document.getElementById(
+            "bmiResult"
+          ).textContent = `Your BMI is ${bmi.toFixed(2)} (${category})`;
+        });
+
+
+
+
+        
+        </script>
+
+     
+  </body>
+</html>
