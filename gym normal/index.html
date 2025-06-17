@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Place this at the top of your page, above or beside your title -->
+      <div class="energy-logo-title-wrap">
+        <img src="logo.png" alt="Energy Hub Gym Logo" class="energy-logo-img">
+        <h1 class="energy-hub-title">Energy Hub Gym</h1>
+      </div>
+
+    
+   
+
+    <section class="hero">
+      <div class="content">
+        <div class="title">Welcome to FitLife</div>
+        <div class="sub-title">
+          <p>Your fitness journey starts here.</p>
+          <p>Transform Your Body, Mind, and Life!</p>
+        </div>
+        <div class="buttons">
+          <a href="#pricing" class="cta-btn">Get Started</a>
+        <a href="about.html" class="secondary-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="info-section">
+      <h2>About Energy Hub Gym</h2>
+      <p>
+        We offer state-of-the-art equipment, expert trainers, and a vibrant
+        community to help you achieve your fitness goals.
+      </p>
+    </section>
+
+    <section id="join" class="info-section">
+      <h2>Join Us</h2>
+      <p>
+        Ready to start your fitness journey? Sign up today and experience the
+        Energy Hub difference!
+      </p>
+    </section>
+
+     <!-- ...existing code... -->
+
+<section id="workouts" class="workout-section">
+  <h2>Workout Sessions</h2>
+  <div class="workout-list">
+    <div class="workout-item">
+      <img src="img1.webp" alt="Cardio Session">
+      <div class="workout-info">
+        <h3>Cardio Blast</h3>
+        <p>High-energy cardio sessions to boost your stamina and burn calories fast.</p>
+      </div>
+    </div>
+    <div class="workout-item">
+      <img src="img2.jpg" alt="Strength Training">
+      <div class="workout-info">
+        <h3>Strength Training</h3>
+        <p>Build muscle and power with our expert-led strength training routines.</p>
+      </div>
+    </div>
+    <div class="workout-item">
+      <img src="img3.jpg" alt="Yoga Flow">
+      <div class="workout-info">
+        <h3>Yoga Flow</h3>
+        <p>Improve flexibility and find your inner peace with our calming yoga classes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ...existing code... -->
+
+    <section class="gallery">
+      <h1>Gallery</h1>
+      <div class="images">
+        <div>
+          <img src="img1.webp" alt="galleryImage" />
+          <img src="img2.jpg" alt="galleryImage" />
+          <img src="img3.jpg" alt="galleryImage" />
+        </div>
+        <div>
+          <img src="img4.jpg" alt="galleryImage" />
+          <img src="img7.jpg" alt="galleryImage" />
+          <img src="img8.jpg" alt="galleryImage" />
+        </div>
+        <div>
+          <img src="img5.jpg" alt="galleryImage" />
+          <img src="img6.jpg" alt="galleryImage" />
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h1>Our Plans</h1>
+      <div class="wrapper">
+        <div class="card">
+          <img src="pricing.jpg" alt="Basic Plan" />
+          <div class="title">
+            <h1>Basic</h1>
+            <h3>₹999 / month</h3>
+          </div>
+          <div class="description">
+            <p>✔ Unlimited Gym Access</p>
+            <p>✔ Group Classes</p>
+            <p>✔ Locker Facility</p>
+            <a href="#">Join Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pricing.jpg" alt="Premium Plan" />
+          <div class="title">
+            <h1>Premium</h1>
+            <h3>₹1499 / month</h3>
+          </div>
+          <div class="description">
+            <p>✔ Everything in Basic</p>
+            <p>✔ Personal Trainer</p>
+            <p>✔ Steam & Sauna</p>
+            <a href="#">Join Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pricing.jpg" alt="Pro Plan" />
+          <div class="title">
+            <h1>Pro</h1>
+            <h3>₹1999 / month</h3>
+          </div>
+          <div class="description">
+            <p>✔ Premium Plan Benefits</p>
+            <p>✔ Nutrition Guidance</p>
+            <p>✔ Priority Booking</p>
+            <a href="#">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bmi">
+      <h1>Calculate Your BMI</h1>
+      <div class="container">
+        <div class="wrapper">
+          <form id="bmiForm">
+            <div>
+              <label for="height">Height (in cm)</label>
+              <input type="number" id="height" required />
+            </div>
+            <div>
+              <label for="weight">Weight (in kg)</label>
+              <input type="number" id="weight" required />
+            </div>
+            <button type="submit">Calculate BMI</button>
+            <div id="bmiResult" style="margin-top: 1rem"></div>
+          </form>
+        </div>
+        <div class="wrapper">
+          <img src="bmi.jpg" alt="BMI Info" />
+        </div>
+      </div>
+    </section>
+
+
+     
+      <!-- ...existing code... -->
+<section id="contact-form" class="contact-section">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/xanjbyvw" method="POST" id="contactForm">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+    
+    <button type="submit" class="send-btn">Send Message</button>
+  </form>
+  <div id="form-success" style="display:none;color:#ffb347;margin-top:1rem;">
+    Thank you! Your message has been sent.
+  </div>
+</section>
+
+
+
+
+
+      </form>
+    </section>
+
+    <footer>© 2025 Prince Patel. All rights reserved by Prince Patel.</footer>
+    <footer>
+      
+      <p>Follow us on:</p>
+      <a href="" target="_blank">Facebook</a> |
+      <a href="" target="_blank">Instagram</a> |
+      <a href="" target="_blank">Twitter</a>
+
+      <br><br><br><br>
+      <p>Devlop By : Prince Patel 
+         <br>contact : +91 **********
+      </p>
+
+  
+
+  
+         
+
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10114.244713379192!2d72.55483784866661!3d23.691159022200647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c4f5abde357d5%3A0x48ea4d40b9839fb8!2sEnergy%20Hub%20Gym!5e0!3m2!1sen!2sin!4v1750153240829!5m2!1sen!2sin" 
+          width="300" 
+          height="200" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+     
+    </footer>
+    </div>
+
+
+ 
+
+
+
+      
+
+        <script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.reset();
+      document.getElementById('form-success').style.display = 'block';
+    } else {
+      alert('There was a problem sending your message.');
+    }
+  }).catch(() => {
+    alert('There was a problem sending your message.');
+  });
+});
+
+      document
+        .getElementById("bmiForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const height =
+            parseFloat(document.getElementById("height").value) / 100;
+          const weight = parseFloat(document.getElementById("weight").value);
+          const bmi = weight / (height * height);
+          let category = "";
+          if (bmi < 18.5) category = "Underweight";
+          else if (bmi < 24.9) category = "Normal weight";
+          else if (bmi < 29.9) category = "Overweight";
+          else category = "Obese";
+          document.getElementById(
+            "bmiResult"
+          ).textContent = `Your BMI is ${bmi.toFixed(2)} (${category})`;
+        });
+
+
+
+        document.oncontextmenu = () => {
+          alert("Right-click is disabled on this page.");
+          return false;
+        }
+        document.onkeydown = (e) => {
+          if (e.key === "F12") {
+            alert("Inspect Element is disabled on this page.");
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.key === "u") {
+            alert("Inspect Element is disabled on this page.");
+            return false;
+          }
+
+          if (e.ctrlKey && e.key === "c") {
+            alert("View Source is disabled on this page.");
+            return false;
+          }
+          if (e.ctrlKey && e.key === "v") {
+            alert("Saving this page is disabled.");
+            return false;
+          }
+        }
+
+
+        
+        </script>
+
+     
+  </body>
+</html>
